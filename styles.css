@@ -29,10 +29,10 @@ header {
   z-index: 50;
 }
 
-header::before {
-  position: absolute;
-  width: 100%;
-  /* para acabar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #navs {
@@ -41,7 +41,10 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 800px;
+  padding-left: 10px;
 }
 
 #navs > li > a {
@@ -53,11 +56,18 @@ header::before {
   width: 40px;
 }
 
+#menu {
+  display: none;
+}
+
 main {
   width: 100%;
 }
 
-/* Updated hero section */
+#firstMain {
+  margin-top: 45px;
+}
+
 .main1 {
   position: relative;
   width: 100%;
@@ -144,22 +154,41 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
-  .hero {
-    height: 400px; /* Reduce height for smaller screens */
+  .main1 {
+    height: 500px;
   }
 
-  .hero-img {
+  #firstMain {
+    margin-top: 45px;
+  }
+
+  #firstContent {
+    padding-top: 290px;
+  }
+
+  .main1-img {
     content: url('./photos/iphone_pro_background_mobile.jpg');
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .buttons > button {
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .menu {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  #navs {
+    padding-right: 10px;
   }
 }
