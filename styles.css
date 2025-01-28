@@ -85,15 +85,17 @@ main {
 .main1-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the section properly */
-  object-position: center; /* Centers the image in the viewport */
+  object-fit: cover;
+  object-position: center;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
-.main-content {
+#firstContent,
+#secondContent,
+#thirdContent {
   position: absolute;
   top: 80px;
   z-index: 1;
@@ -108,10 +110,11 @@ h2 {
 }
 
 p {
-  justify-items: center;
   font-weight: 120;
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: 15px;
+  max-width: 370px;
+  text-align: center;
 }
 
 .P {
@@ -122,20 +125,29 @@ p {
   color: white;
 }
 
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 .buttons {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.smallButtons {
-  height: 10px;
-}
-
-.buttons > button {
+#buttons1 > button,
+#buttons2 > button,
+#buttons3 > button {
   font-size: 15px;
   padding: 12px;
   border-radius: 30px;
+  margin-top: 5px;
+}
+
+.smallButtons {
+  height: 10px;
 }
 
 button:hover {
@@ -150,14 +162,18 @@ button:hover {
 
 .moreInfoWhite {
   border-color: white;
-  border-style: none;
+  border-style: solid;
 }
 
 .buyWhite {
-  border-color: white;
-  border-style: none;
+  border: 1px solid white;
   background-color: rgba(255, 255, 255, 0);
   color: white;
+}
+
+.buyWhite:hover {
+  background-color: white;
+  color: black;
 }
 
 .buyBlue {
@@ -180,13 +196,53 @@ button:hover {
   margin-bottom: 10px;
 }
 
-#AirPods4 {
-  position: absolute;
-  bottom: 90px;
+#AppleWatchUltra {
+  height: 90px;
+}
+
+#MacBook {
+  color: black;
+}
+
+#tradeIn {
+  justify-content: center;
+  align-items: center;
+  margin: 0 calc(50%-70.5px);
 }
 
 .h2Section {
   font-size: 40px;
+}
+
+.bigDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#miniFlex1,
+#miniFlex2,
+#miniFlex5,
+#miniFlex6 {
+  position: absolute;
+  top: 50px;
+}
+
+#miniFlex3 {
+  position: absolute;
+  bottom: 80px;
+}
+
+#miniFlex4 {
+  position: absolute;
+  top: 50px;
+}
+
+.miniSectionsFlex > div > div > button {
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 30px;
 }
 
 #sectionFlex {
@@ -200,7 +256,7 @@ button:hover {
 
 .miniSectionsFlex {
   display: flex;
-  height: 500px;
+  height: 580px;
   position: relative;
   margin: 0 auto;
   justify-content: center;
@@ -218,6 +274,29 @@ button:hover {
   z-index: -1;
   min-height: 500px;
   min-width: 400px;
+}
+
+@media (max-width: 1070px) {
+  .miniSectionsFlex {
+    height: 500px;
+  }
+
+  .h2Section {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .miniSectionsFlex > div > div > button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  #tradeIn {
+    height: 30px;
+  }
 }
 
 @media (max-width: 850px) {

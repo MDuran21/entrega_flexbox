@@ -53,9 +53,9 @@
           class="main1-img"
           id="iPhone1"
         />
-        <div class="main-content" id="firstContent">
+        <div class="bidDiv" class="main-content" id="firstContent">
           <h2>iPhone 16 Pro</h2>
-          <section class="buttons">
+          <section class="main-buttons" id="buttons1">
             <button class="moreInfo">More Info</button>
             <button class="buyBlue">Buy</button>
           </section>
@@ -68,9 +68,9 @@
           class="main1-img"
           id="iPhone2"
         />
-        <div class="main-content" id="secondContent">
+        <div class="bidDiv" class="main-content" id="secondContent">
           <h2>iPhone 16</h2>
-          <section class="buttons">
+          <section class="main-buttons" id="buttons2">
             <button class="moreInfoWhite">More Info</button>
             <button class="buyWhite">Buy</button>
           </section>
@@ -83,14 +83,14 @@
           class="main1-img"
           id="iPhone3"
         />
-        <div class="main-content">
+        <div class="bidDiv" class="main-content" id="thirdContent">
           <img
             id="watchSeries10"
             src="./photos/apple_watch_series10.png"
             alt="Apple Watch"
           />
           <p>The new timeline.</p>
-          <section class="buttons">
+          <section class="main-buttons" id="buttons3">
             <button class="moreInfo">More Info</button>
             <button class="buyBlue">Buy</button>
           </section>
@@ -103,13 +103,13 @@
             alt="iPadPro"
             class="section1-img"
           />
-          <div>
+          <div class="bidDiv" id="miniFlex1">
             <h2 class="h2Section">iPad Pro</h2>
-            <p class="whiteP" class="P">Ultra-thin. Mega powerful.</p>
-            <section class="buttons">
+            <p class="whiteP">Ultra-thin. Mega powerful.</p>
+            <div class="buttons">
               <button class="moreInfo">More Info</button>
               <button class="buyBlue">Buy</button>
-            </section>
+            </div>
           </div>
         </section>
         <section class="miniSectionsFlex">
@@ -118,13 +118,13 @@
             alt="MacBookPro"
             class="section1-img"
           />
-          <div>
+          <div class="bidDiv" id="miniFlex2">
             <h2 class="h2Section">MacBook Pro</h2>
-            <p class="whiteP" class="P">Beauty is wise.</p>
-            <section class="buttons">
+            <p class="whiteP">Beauty is wise.</p>
+            <div class="buttons">
               <button class="moreInfo">More Info</button>
               <button class="buyBlue">Buy</button>
-            </section>
+          </div>
           </div>
         </section>
         <section class="miniSectionsFlex">
@@ -133,12 +133,13 @@
             alt="AirPods4"
             class="section1-img"
           />
-          <div id="AirPods4">
+          <div class="bidDiv" id="miniFlex3">
             <h2 class="h2Section">AirPods 4</h2>
-            <section class="buttons">
+            <p class="whiteP">Iconics. Supersonics.</p>
+            <div class="buttons">
               <button class="moreInfo">More Info</button>
               <button class="buyBlue">Buy</button>
-            </section>
+          </div>
           </div>
         </section>
         <section class="miniSectionsFlex">
@@ -147,13 +148,17 @@
             alt=""
             class="section1-img"
           />
-          <div>
-            <img src="./photos/watch_ultra.png" alt="Apple Watch Ultra 2" />
-            <h3>Nuevo acabado. Empieza la aventura</h3>
-            <section class="buttons">
+          <div class="bidDiv" id="miniFlex4">
+            <img
+              src="./photos/watch_ultra.png"
+              alt="Apple Watch Ultra 2"
+              id="AppleWatchUltra"
+            />
+            <p class="whiteP">New finishing. </br> The adventure starts.</p>
+            <div class="buttons">
               <button class="moreInfo">More Info</button>
               <button class="buyBlue">Buy</button>
-            </section>
+            </div>
           </div>
         </section>
         <section class="miniSectionsFlex">
@@ -162,22 +167,25 @@
             alt="MacBook"
             class="section1-img"
           />
-          <div>
-            <h2 class="h2Section">iPad Pro</h2>
-            <section class="buttons">
+          <div class="bidDiv" id="miniFlex5">
+            <h2 class="h2Section" id="MacBook">MacBook Air</h2>
+            <p>M3 power. Maximum afiliation.</p>
+            <div class="buttons">
               <button class="moreInfo">More Info</button>
               <button class="buyBlue">Buy</button>
-            </section>
+           </div>
           </div>
         </section>
         <section class="miniSectionsFlex">
           <img src="./photos/iphone_trade.jpg" alt="" class="section1-img" />
-          <div>
-            <h2>iPad Pro</h2>
-            <section class="buttons">
-              <button class="moreInfo">More Info</button>
-              <button class="buyBlue">Buy</button>
-            </section>
+          <div class="bidDiv" id="miniFlex6">
+            <img src="./photos/trade_in_apple.png" alt="Trade In" height="40px" id="tradeIn">
+            <p>
+              Get between €160 and €750<br />trading in your iPhone 12 or later.
+            </p>
+            <div class="buttons">
+              <button class="moreInfo">See estimation</button>
+            </div>
           </div>
         </section>
       </section>
