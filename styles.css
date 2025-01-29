@@ -18,9 +18,16 @@
 html {
   width: 100%;
   height: 100%;
+  /*No estoy seguro de si hace falta ponerlo esto*/
+}
+
+body {
+  min-width: 500px;
+  /*No quiero que el usuario deforme la página*/
 }
 
 header {
+  /*fixed me da menos problemas que el sticky*/
   position: fixed;
   width: 100%;
   top: 0;
@@ -58,6 +65,7 @@ nav {
 
 #menu {
   display: none;
+  /*Tengo mis dudas de si esto se hace así o de otra forma para el menu*/
 }
 
 main {
@@ -197,6 +205,7 @@ button:hover {
 }
 
 #AppleWatchUltra {
+  position: relative;
   height: 90px;
 }
 
@@ -205,9 +214,9 @@ button:hover {
 }
 
 #tradeIn {
-  justify-content: center;
-  align-items: center;
-  margin: 0 calc(50%-70.5px);
+  position: relative;
+  left: 84.935px;
+  margin-bottom: 5px;
 }
 
 .h2Section {
@@ -226,7 +235,7 @@ button:hover {
 #miniFlex5,
 #miniFlex6 {
   position: absolute;
-  top: 50px;
+  top: 35px;
 }
 
 #miniFlex3 {
@@ -236,7 +245,7 @@ button:hover {
 
 #miniFlex4 {
   position: absolute;
-  top: 50px;
+  top: 35px;
 }
 
 .miniSectionsFlex > div > div > button {
@@ -289,6 +298,10 @@ button:hover {
     font-size: 20px;
   }
 
+  .mainP {
+    font-size: 23px;
+  }
+
   .miniSectionsFlex > div > div > button {
     font-size: 13px;
     padding: 8px 14px;
@@ -296,6 +309,11 @@ button:hover {
 
   #tradeIn {
     height: 30px;
+  }
+
+  #AppleWatchUltra {
+    height: 70px;
+    left: 10.91px;
   }
 }
 
@@ -312,6 +330,20 @@ button:hover {
     padding-top: 290px;
   }
 
+  #thirdContent {
+    top: 40px;
+  }
+
+  #watchSeries10 {
+    position: relative;
+    left: 21.22px;
+  }
+
+  .mainP {
+    margin-bottom: 5px;
+    font-size: 21px;
+  }
+
   #iPhone1 {
     content: url('./photos/iphone_pro_background_mobile.jpg');
   }
@@ -321,7 +353,7 @@ button:hover {
   }
 
   #secondContent {
-    top: 60px;
+    top: 40px;
   }
 
   #iPhone3 {
